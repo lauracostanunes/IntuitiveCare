@@ -84,7 +84,6 @@ def extrair_tabela(pdf_path):
 
 
 def substituir_abreviacoes(df):
-    """Substitui abreviações pelas descrições completas"""
     colunas_para_verificar = [col for col in df.columns if isinstance(col, str)]
 
     for coluna in colunas_para_verificar:
